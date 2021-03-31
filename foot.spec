@@ -9,18 +9,18 @@ Source0:        https://codeberg.org/dnkl/foot/archive/%{version}/%{name}-%{vers
 
 BuildRequires:  meson >= 0.53
 BuildRequires:  desktop-file-utils
-#BuildRequires:  pkgconfig(fcft) >= 2.3.0
+BuildRequires:  pkgconfig(fcft) >= 2.3.0
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(pixman-1)
 BuildRequires:  pkgconfig(scdoc)
-#BuildRequires:  pkgconfig(tllist) >= 1.0.4
+BuildRequires:  pkgconfig(tllist) >= 1.0.4
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
 BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wayland-scanner) 
 BuildRequires:  pkgconfig(xkbcommon)
 # require *-static for header-only library
-#BuildRequires:  tllist-static
+BuildRequires:  tllist-static
 
 Recommends:     %{name}-terminfo = %{version}-%{release}
 # Optional dependency for bell = notify option
