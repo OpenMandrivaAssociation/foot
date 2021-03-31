@@ -9,18 +9,18 @@ Source0:        https://codeberg.org/dnkl/foot/archive/%{version}/%{name}-%{vers
 
 BuildRequires:  meson >= 0.53
 BuildRequires:  desktop-file-utils
-BuildRequires:  pkgconfig(fcft) >= 2.3.0
+#BuildRequires:  pkgconfig(fcft) >= 2.3.0
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(pixman-1)
 BuildRequires:  pkgconfig(scdoc)
-BuildRequires:  pkgconfig(tllist) >= 1.0.4
+#BuildRequires:  pkgconfig(tllist) >= 1.0.4
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
 BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wayland-scanner) 
 BuildRequires:  pkgconfig(xkbcommon)
 # require *-static for header-only library
-BuildRequires:  tllist-static
+#BuildRequires:  tllist-static
 
 Recommends:     %{name}-terminfo = %{version}-%{release}
 # Optional dependency for bell = notify option
@@ -56,10 +56,8 @@ Requires:       ncurses-base
 %description    terminfo
 %{summary}.
 
-
 %prep
 %autosetup -n %{name}
-
 
 %build
 %meson
@@ -70,13 +68,6 @@ Requires:       ncurses-base
 %meson_install
 # Will be installed to correct location with rpm macros
 rm %{buildroot}%{_docdir}/%{name}/LICENSE
-
-
-%check
-%meson_test
-desktop-file-validate \
-    %{buildroot}/%{_datadir}/applications/%{name}.desktop \
-    %{buildroot}/%{_datadir}/applications/%{name}-server.desktop
 
 
 %files
@@ -109,14 +100,3 @@ desktop-file-validate \
 %dir %{_datadir}/terminfo/f
 %{_datadir}/terminfo/f/%{name}
 %{_datadir}/terminfo/f/%{name}-direct
-
-
-%changelog
-* Sun Mar 28 2021 Aleksei Bavshin <alebastr@fedoraproject.org> - 1.7.1-1
-- Update to 1.7.1
-
-* Sat Mar 20 2021 Aleksei Bavshin <alebastr@fedoraproject.org> - 1.7.0-1
-- Update to 1.7.0
-
-* Wed Mar 10 2021 Aleksei Bavshin <alebastr@fedoraproject.org> - 1.6.4-1
-- Initial import (#1912856)
