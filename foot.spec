@@ -51,7 +51,7 @@ Features:
 %package        terminfo
 Summary:        Terminfo files for %{name} terminal
 BuildRequires:  /usr/bin/tic
-Requires:       ncurses-base
+Requires:       ncurses
 
 %description    terminfo
 %{summary}.
