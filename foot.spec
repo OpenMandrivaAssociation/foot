@@ -1,16 +1,14 @@
 Name:           foot
 Version:        1.7.1
-Release:        1%{?dist}
+Release:        1
 Summary:        Fast, lightweight and minimalistic Wayland terminal emulator
 
 License:        MIT
-URL:            https://codeberg.org/dnkl/%{name}
-Source0:        %{url}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+URL:            https://codeberg.org/dnkl/foot
+Source0:        https://codeberg.org/dnkl/foot/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  gcc
 BuildRequires:  meson >= 0.53
 BuildRequires:  desktop-file-utils
-
 BuildRequires:  pkgconfig(fcft) >= 2.3.0
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(pixman-1)
