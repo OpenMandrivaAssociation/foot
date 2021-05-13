@@ -1,5 +1,5 @@
 Name:           foot
-Version:        1.7.1
+Version:        1.7.2
 Release:        1
 Summary:        Fast, lightweight and minimalistic Wayland terminal emulator
 
