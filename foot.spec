@@ -1,6 +1,6 @@
 Name:           foot
 Version:        1.7.2
-Release:        1
+Release:        2
 Summary:        Fast, lightweight and minimalistic Wayland terminal emulator
 
 License:        MIT
