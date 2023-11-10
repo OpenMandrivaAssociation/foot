@@ -75,6 +75,7 @@ rm %{buildroot}%{_docdir}/%{name}/LICENSE
 %license LICENSE
 %{_bindir}/%{name}
 %{_bindir}/%{name}client
+%{_sysconfdir}/xdg/foot/foot.ini
 %{_datadir}/%{name}/
 %{_datadir}/applications/org.codeberg.dnkl.foot-server.desktop
 %{_datadir}/applications/org.codeberg.dnkl.foot.desktop
