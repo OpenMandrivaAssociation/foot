@@ -14,6 +14,7 @@ BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(pixman-1)
 BuildRequires:  pkgconfig(scdoc)
 BuildRequires:  pkgconfig(tllist) >= 1.0.4
+BuildRequires:  pkgconfig(libutf8proc)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
 BuildRequires:  pkgconfig(wayland-protocols)
