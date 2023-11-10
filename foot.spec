@@ -105,5 +105,5 @@ rm %{buildroot}%{_docdir}/%{name}/LICENSE
 %files terminfo
 %license LICENSE
 %dir %{_datadir}/terminfo/f
-%{_datadir}/terminfo/f/%{name}
-%{_datadir}/terminfo/f/%{name}-direct
+%{_datadir}/terminfo/f/%{foot_terminfo}
+%{_datadir}/terminfo/f/%{foot_terminfo}-direct
