@@ -76,8 +76,9 @@ rm %{buildroot}%{_docdir}/%{name}/LICENSE
 %{_bindir}/%{name}
 %{_bindir}/%{name}client
 %{_datadir}/%{name}/
-%{_datadir}/applications/%{name}-server.desktop
-%{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/org.codeberg.dnkl.foot-server.desktop
+%{_datadir}/applications/org.codeberg.dnkl.foot.desktop
+%{_datadir}/applications/org.codeberg.dnkl.footclient.desktop
 %{_datadir}/icons/hicolor/48x48/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/bash-completion/completions/foot*
