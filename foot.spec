@@ -60,7 +60,7 @@ Requires:       ncurses
 %{summary}.
 
 %prep
-%autosetup -n %{name}
+%autosetup -n %{name}-%{version}
 
 %build
 %meson  \
