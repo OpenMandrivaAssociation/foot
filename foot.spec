@@ -1,10 +1,9 @@
 %global foot_terminfo foot-extra
 
 Name:           foot
-Version:        1.18.1
+Version:        1.19.0
 Release:        1
 Summary:        Fast, lightweight and minimalistic Wayland terminal emulator
-
 License:        MIT
 URL:            https://codeberg.org/dnkl/foot
 Source0:        https://codeberg.org/dnkl/foot/archive/%{version}/%{name}-%{version}.tar.gz
