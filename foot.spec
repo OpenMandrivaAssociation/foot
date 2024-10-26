@@ -59,7 +59,7 @@ Requires:       ncurses
 %{summary}.
 
 %prep
-%autosetup -n %{name}-%{version}
+%autosetup -n %{name} -p1
 
 %build
 %meson  \
