@@ -79,10 +79,12 @@ rm %{buildroot}%{_docdir}/%{name}/LICENSE
 %{_bindir}/%{name}
 %{_bindir}/%{name}client
 %{_sysconfdir}/xdg/foot/foot.ini
+%{_prefix}/lib/systemd/user/foot-server.service
+%{_prefix}/lib/systemd/user/foot-server.socket
 %{_datadir}/%{name}/
-#{_datadir}/applications/org.codeberg.dnkl.foot-server.desktop
-#{_datadir}/applications/org.codeberg.dnkl.foot.desktop
-#{_datadir}/applications/org.codeberg.dnkl.footclient.desktop
+%{_datadir}/applications/foot-server.desktop
+%{_datadir}/applications/foot.desktop
+%{_datadir}/applications/footclient.desktop
 %{_datadir}/icons/hicolor/48x48/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/bash-completion/completions/foot*
