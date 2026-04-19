@@ -1,7 +1,7 @@
 %global foot_terminfo foot-extra
 
 Name:           foot
-Version:        1.21.0
+Version:        1.26.1
 Release:        1
 Summary:        Fast, lightweight and minimalistic Wayland terminal emulator
 License:        MIT
